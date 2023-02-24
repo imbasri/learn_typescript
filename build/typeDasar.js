@@ -17,3 +17,6 @@ umur = 30;
 let isMarried;
 isMarried = true;
 isMarried = false;
+// any type data bisa di reasign  yang value akhir ya bebas seperti menggunakan javascript biasa.
+let heroes = "Batman";
+heroes = 100;

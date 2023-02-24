@@ -14,7 +14,12 @@ nama = "capybara";
 let umur: number;
 umur = 26;
 umur = 30;
+
 // boolean
 let isMarried: boolean;
 isMarried = true;
 isMarried = false;
+
+// any type data bisa di reasign  yang value akhir ya bebas seperti menggunakan javascript biasa.
+let heroes: any = "Batman";
+heroes = 100;
