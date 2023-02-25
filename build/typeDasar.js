@@ -20,3 +20,9 @@ isMarried = false;
 // any type data bisa di reasign  yang value akhir ya bebas seperti menggunakan javascript biasa.
 let heroes = "Batman";
 heroes = 100;
+// union berisikan data bisa antara type yang dibuat string atau number
+620660;
+("085225");
+let phone;
+phone = 0852123123;
+phone = "+628521254";
