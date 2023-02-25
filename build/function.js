@@ -21,3 +21,8 @@ function multiPly(val1, val2) {
 }
 const result = multiPly(2, 2);
 console.log(result);
+let age = 26;
+const Add = (val1, val2) => {
+    return val1 + val2;
+};
+console.log(Add(2, 10));
