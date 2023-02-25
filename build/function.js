@@ -26,3 +26,15 @@ const Add = (val1, val2) => {
     return val1 + val2;
 };
 console.log(Add(2, 10));
+// default parameters
+const fullName = (first, last = "Bujank") => {
+    return first + " " + last;
+};
+console.log(fullName("Andra"));
+console.log(fullName("Andra", "the BackBone"));
+// optional parameter ?= jika tidak ada argument maka dia akan undifined , tidak bisa digunakan saat hasil return itu type number
+const getAddress = (val1, val2) => {
+    return val1 + " " + val2;
+};
+console.log(getAddress("jakarta", "bekasi")); // jakarta bekasi
+console.log(getAddress("jakarta")); // ini akan jakarta undifined
