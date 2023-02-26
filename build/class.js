@@ -22,10 +22,11 @@ console.log(user.age);
 // private = hanya bisa di akses kelas itu sendiri
 // inheritance
 class Admin extends User {
-    constructor() {
-        super(...arguments);
+    constructor(phone, name, age) {
+        super(name, age);
         this.read = true;
         this.write = true;
+        this.phone = phone;
     }
     getRule() {
         return {
@@ -34,7 +35,7 @@ class Admin extends User {
         };
     }
 }
-let admin = new Admin("tony", 25);
+let admin = new Admin("08123123123", "tony", 25);
 admin.getRule();
 user.name = "danang";
 console.log(user.name);
