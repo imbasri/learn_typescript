@@ -24,7 +24,11 @@ console.log(user.age);
 class Admin extends User {
    read: boolean = true;
    write: boolean = true;
-
+   phone: string;
+   constructor(phone: string, name: string, age: number) {
+      super(name, age);
+      this.phone = phone;
+   }
    getRule(): { read: boolean; write: boolean } {
       return {
          read: this.read,
@@ -33,7 +37,7 @@ class Admin extends User {
    }
 }
 
-let admin = new Admin("tony", 25);
+let admin = new Admin("08123123123", "tony", 25);
 admin.getRule();
 user.name = "danang";
 console.log(user.name);
